@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Historial de Trabajos</title>
+
+    </head>
+    <body>
+        <h1>Cantidad y Estado de trabajos en un Periodo</h1>
+        <p>Se muestra la cantidad de trabajos realizados en un periodo</p>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Periodo de tiempo</legend>
+                <br>
+                <label for="fechaini"> Fecha de Inicio </label>
+                <br>
+                <input type="date" name="fechaini" id="fechaini"
+                       min="2018-01-01" max="2023-12-31" required>
+                <br>
+                <label for="fechafin"> Fecha de Fin </label>
+                <br>
+                <input type="date" name="fechafin" id="fechafin"
+                       min="2018-01-01" max="2023-12-31" required>
+                <br>
+                <br>
+                <input type="submit" name="guardar" value="Buscar">
+                <input type="reset" name="cancelar" value="Cancelar">
+            </fieldset>
+        </form>
+        <br>
+        <br>
+        <div id="resultados">
+            <p id="cantidadTrabajos" > Cantidad de Trabajos: </p>
+            <p id="trabajosAprobados" style="color:MediumSeaGreen"> Trabajos Aprobados: </p>
+            <p id="trabajosRechazados" style="color:Tomato"> Trabajos Rechazados: </p>
+            <p id="trabajosPendientes" style="color:Orange"> Trabajos Pendientes: </p>
+        </div>
+    </body>
+    <footer>
+
+    </footer>
+
+</html>
