@@ -3,39 +3,67 @@
     <head>
         <meta charset = "UTF-8">
         <title>Historial de Trabajos</title>
+        <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+        <style>
+            body{
+                background-color: #8CBED6;
+            }
+        </style>
 
     </head>
     <body>
-        <h1>Cantidad y Estado de trabajos en un Periodo</h1>
-        <p>Se muestra la cantidad de trabajos realizados en un periodo</p>
-        <form action="#" method="post">
-            <fieldset>
-                <legend>Periodo de tiempo</legend>
+        <h1 style=" display:flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;">Cantidad y Estado de trabajos en un Periodo</h1>
+        <br>
+        <br>
+        <p class="fs-3" style=" display:flex;
+        position: relative;
+        justify-content: center;
+        align-items: center; " >Se muestra la cantidad de trabajos realizados en un periodo</p>
+        <form action="#" method="post" style="left:25px; display:flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;">
+        
+            <fieldset style="align-items: center; display:grid;">
+                <br>
+                <legend style="position: relative; left: 15px;"> <strong>Periodo de tiempo</strong></legend>
                 <br>
                 <label for="fechaini"> Fecha de Inicio </label>
-                <br>
+                
                 <input type="date" name="fechaini" id="fechaini"
                        min="2018-01-01" max="2023-12-31" required>
                 <br>
-                <label for="fechafin"> Fecha de Fin </label>
                 <br>
+                <label for="fechafin"> Fecha de Fin </label>
+                
                 <input type="date" name="fechafin" id="fechafin"
                        min="2018-01-01" max="2023-12-31" required>
                 <br>
                 <br>
-                <input type="submit" name="guardar" value="Buscar">
-                <input type="reset" name="cancelar" value="Cancelar">
+                <button class="btn btn-primary" type="submit" style="left: 25px; width: 15rem;">Buscar</button>
+                <br>
+                <button class="btn btn-primary" type="reset" style="left: 25px; width: 15rem;">Cancelar</button>
+            
             </fieldset>
         </form>
         <br>
         <br>
-        <div id="resultados">
+        <div id="resultados" style="left:25px; display:flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;">
             <p id="cantidadTrabajos" > Cantidad de Trabajos: </p>
-            <p id="trabajosAprobados" style="color:MediumSeaGreen"> Trabajos Aprobados: </p>
-            <p id="trabajosRechazados" style="color:Tomato"> Trabajos Rechazados: </p>
-            <p id="trabajosObservados" style="color:Blue"> Trabajos Observados: </p>
-            <p id="trabajosPendientes" style="color:Orange"> Trabajos Pendientes: </p>
+
+            <div class="p-3 mb-2 bg-dark text-success">Trabajos Aprobados:</div>
+            <div class="p-3 mb-2 bg-dark text-danger">Trabajos Rechazados:</div>
+            <div class="p-3 mb-2 bg-dark text-warning">Trabajos Observados:</div>
+            <div class="p-3 mb-2 bg-dark text-white"> Trabajos Pendientes:</div>
+            
         </div>
+        <script src="bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
     </body>
     <footer>
 

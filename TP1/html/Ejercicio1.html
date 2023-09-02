@@ -3,37 +3,60 @@
     <head>
         <meta charset = "UTF-8">
         <title>Registro Integrantes CSTF</title>
+        <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.min.css">
+        <style>
+            body{
+                background-color: #8CBED6;
+            }
+        </style>
     </head>
     <body>
-        <h1>SISTEMA DE REGISTRO: Comision de Seguimiento de Trabajos Finales</h1>
-        <h3>Complete los campos por favor</h3>
-        <form action="#" method="post">
-            <fieldset>
-                <legend>Datos Integrante</legend>
-                <br>
-                ******LOS CAMPOS SON OBLIGATORIOS*******
-                <br>
+        <h1 style= "display: flex; 
+                    position: relative;
+                    justify-content: center;
+                    ">SISTEMA DE REGISTRO: Comision de Seguimiento de Trabajos Finales</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 style="left:25px; display: flex; 
+        position: relative;
+        justify-content: center;">Complete los campos por favor</h2>
+        <br>
+        <br>
+        <form action="#" method="post" style="background-color: #70A3CC; display: flex; 
+        position: relative;
+        justify-content: center" >
+            <fieldset style>
+                <legend style="left:25px; position: relative; ">Datos Integrante CSTF</legend>
                 <br>
                 
-                <label for="cuil">N° CUIL/CUIT</label>
+                
+                
+                <label for="cuil" style="left:25px; position: relative;">N° CUIL/CUIT</label>
                 <br>
                 <input type="number" name="cuil" id="cuil" size="11" 
-                placeholder="Ingrese su nro de CUIL/CUIT sin puntos ni guiones" required>
+                placeholder="Ingrese su nro de CUIL/CUIT sin puntos ni guiones" required style="left:25px; position: relative;">
                 <br>
                 <br>
-                <label for="nomyape">Apellido/s y Nombre/s</label>
+                <label for="nomyape" style="left:25px; position: relative;">Apellido/s y Nombre/s</label>
                 <br>
                 <input type="text" name="nomyape" id="nomyape" size="50" maxlength="60" 
-                placeholder="Apellido/s y Nomre/s del Integrante de la CSTF" required>
+                placeholder="Apellido/s y Nombre/s del Integrante de la CSTF" required style="left:25px; position: relative;">
+                
                 <br>
                 <br>
-                <input type="submit" name="guardar" value="Guardar">
-                <input type="reset" name="cancelar" value="Cancelar">
+
+                <button class="btn btn-primary" type="submit" style="left: 25px; position: relative;">Guardar</button>
+                <button class="btn btn-primary" type="reset" style="left: 25px; position: relative;">Cancelar</button>
+                <br>
             </fieldset>
         
             
             
         </form>
+
+        <script src="bootstrap-5.3.1-dist/js/bootstrap.min.js"> </script>
     </body>
     <footer>
 
