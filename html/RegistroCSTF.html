@@ -5,51 +5,68 @@
         <title>Registro Integrantes CSTF</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <style>
-            body{
-                background-color: #8CBED6;
-            }
-        </style>
+        <link rel="stylesheet" href="../css/estilo.css">
     </head>
     <body>
-        <h1 style= "display: flex; 
-                    position: relative;
-                    justify-content: center;
-                    ">SISTEMA DE REGISTRO: Comision de Seguimiento de Trabajos Finales</h1>
+        <nav class="navbar navbar bg fixed-top" id="barra">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" id="titulo_barra">SISTEMA DE REGISTRO: Comision de Seguimiento de Trabajos Finales</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">SISTEMA DE REGISTRO: Comision de Seguimiento de Trabajos Finales</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#" style="color: whitesmoke;">Inicio</a>
+                        </li>
+                      </ul>
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#" aria-expanded="false"
+                        style="color: whitesmoke;"> Perfil
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./Login.html">Perfil 1</a></li>
+                          <li><a class="dropdown-item" href="#">Perfil 2</a></li>
+                          <li><a class="dropdown-item" href="#">Perfil 3</a></li>
+                        </ul>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <br>
         <br>
         <br>
         <br>
-        <h2 style="left:25px; display: flex; 
+        <h2>Datos Integrante CSTF</h2>
+        <br>
+        <br>
+        <form action="#" method="post" style="display:grid;
         position: relative;
-        justify-content: center;">Complete los campos por favor</h2>
-        <br>
-        <br>
-        <form action="#" method="post" style="background-color: #70A3CC; display: flex; 
-        position: relative;
-        justify-content: center" >
-            <fieldset style>
-                <legend style="left:25px; position: relative; ">Datos Integrante CSTF</legend>
-                <br>
-                
-                
-                
-                <label for="cuil" style="left:25px; position: relative;">N° CUIL/CUIT</label>
+        justify-content: center;
+        align-items: center;" >
+            <fieldset>
+                <label for="cuil">N° CUIL/CUIT</label>
                 <br>
                 <input type="number" name="cuil" id="cuil" 
-                placeholder="Ingrese su nro de CUIL/CUIT sin puntos ni guiones" required style="left:25px; position: relative;">
+                placeholder="Ingrese su nro de CUIL/CUIT sin puntos ni guiones" required>
                 <br>
                 <br>
-                <label for="nomyape" style="left:25px; position: relative;">Apellido/s y Nombre/s</label>
+                <label for="nomyape">Apellido/s y Nombre/s</label>
                 <br>
                 <input type="text" name="nomyape" id="nomyape"  maxlength="60" 
-                placeholder="Apellido/s y Nombre/s del Integrante de la CSTF" required style="left:25px; position: relative;">
+                placeholder="Apellido/s y Nombre/s del Integrante de la CSTF" required>
                 
                 <br>
                 <br>
 
-                <button class="btn btn-primary" type="submit" style="left: 25px; position: relative;">Guardar</button>
-                <button class="btn btn-primary" type="reset" style="left: 25px; position: relative;">Cancelar</button>
+                <button class="btn btn-primary" type="submit">Guardar</button>
+                <button class="btn btn-primary" type="reset">Cancelar</button>
                 <br>
             </fieldset>
         
