@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;400&display=swap');
 
+body{
+    background-color: #d8ebf0;
+}
+
 h2{
     display: flex; 
     position: relative;
@@ -18,4 +22,8 @@ h2{
     color: whitesmoke;
     font-weight: 500 ;
     font-size: 26px;
+}
+
+.nav-link, .active{
+    color: whitesmoke;
 }
