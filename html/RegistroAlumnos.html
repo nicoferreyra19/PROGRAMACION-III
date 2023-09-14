@@ -5,19 +5,33 @@
         <title>Registro Alumnos</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-        <style>
-            body{
-                background-color: #8CBED6;
-            }
-        </style>
+        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="../css/estilo.css">
     </head>
     <body>
-        <h1 style="display: flex; 
-        position: relative;
-        justify-content: center;
-        ">SISTEMA REGISTRO: Alumnos</h1>
-        <br>
-        <br>
+        <nav class="navbar navbar bg fixed-top" id="barra">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" id="titulo_barra">Registro Alumnos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Registro Alumnos</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#" style="color: whitesmoke;">Inicio</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        <br><br><br>
+        
         <h3 style="display: flex; 
         position: relative;
         justify-content: center;
@@ -29,7 +43,7 @@
         justify-content: center;
         align-items: center;">
             <fieldset style="left:25px; position: relative; justify-content: center; ">
-                <legend style="position: relative; left: 5px;">Datos Integrante</legend>
+                <legend style="position: relative; left: 20px;">Datos Integrante</legend>
                 <br>
                 <br>
                 <label for="mu" style="left:25px; ">N° Matricula Universitaria</label>
@@ -59,10 +73,8 @@
             <fieldset style=" left:25px; position: relative; justify-content: center;">
                 <legend style="position: relative; left: 60px;">Grupo</legend>
                 <br>
-                <label >INGRESAR APELLIDOS Y NOMBRES</label>
-                <br>
-                <br>
-                <label for="apeynomgrupo" style="left:25px;  ">INTEGRANTES DE GRUPO</label>
+                
+                <label for="apeynomgrupo" style="left:-60px; position: relative;  "> NOMBRE Y APELLIDOS INTEGRANTES DE GRUPO</label>
                 <br>
                 <input type="text" name="apeynomgrupo" id="apeynomgrupo"  maxlength="50"
                 placeholder="Integrante 1" required style="left:25px;  width: 14rem;">
