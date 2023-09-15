@@ -54,21 +54,34 @@
     <br>
     <form action="#" style="position: relative; align-items: center; justify-content: center; display: flex;">
     <div>
-      <table class="table">
+      
+      <table class="table table-light table-bordered border-primary">
         <thead>
-          <tr>
+          <tr class="table-info table-bordered border-primary">
             <th scope="col">ID</th>
             <th scope="col">Nombre del Trabajo</th>
             <th scope="col">Calificacion</th>
             <th scope="col">Estado</th>
             <th scope="col">Fecha de presentación</th>
+            <th scope="col"> Observación </th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">1</th>
             <td>Ej1</td>
-            <td><input type="radio" value="CSTF-Aprobado" id="aprobado1" name="boton" onchange="Ej1.value">Aprobado<input type="radio" value="CSTF-Rechazado" id="rechazado1" name="boton" onchange="Ej1.value">Rechazado</td>
+            <td>
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Clasificar
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Aprobado</a></li>
+                  <li><a class="dropdown-item" href="#">Rechazado</a></li>
+                  <li><a class="dropdown-item" href="#">Observado</a></li>
+                </ul>
+              </div>
+            </td>
             <td id="Ej1">CSTF-Aprobado</td>
             <td>12/10/2020</td>
           </tr>
