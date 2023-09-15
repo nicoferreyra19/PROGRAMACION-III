@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ES">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registro PTF</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo.css">
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar bg fixed-top" id="barra">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="titulo_barra">Registro PTF</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Registro PTF</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: whitesmoke;">Inicio</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br><br><br>
+
+    <h1>Ingreso de Nuevo PTF</h1>
+
+    
+    <form id="formulario_PTF" action="#" style="position: relative; align-items: center; justify-content: center; display:grid;">
+      <div class="mb-3">
+        <label for="fecha_presentacion" class="form-label">Fecha Presentacion</label>
+        <input type="date" class="form-control" id="fecha_presentacion" required>
+      </div>
+
+      <br>
+
+      <div id="Alumno1"> 
+        <h3>Ingrese datos del Alumno 1</h3>
+        <br>
+        <div class="col-md-4">
+          <label for="NombreA1" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="NombreA1" required>
+        </div>
+        <div class="col-md-4">
+          <label for="ApellidoA1" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="ApellidoA1" required>
+        </div>
+        <div class="col-md-4">
+          <label for="MU1" class="form-label">N° Matricula Universitaria (MU)</label>
+          <input type="number" class="form-control" id="MU1" required>
+        </div>   
+      </div> 
+
+      <br><br>
+
+      <div id="Alumno2"> 
+        <h3>Ingrese datos del Alumno 2</h3>
+        <br>
+        <div class="col-md-4">
+          <label for="NombreA2" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="NombreA2" required>
+        </div>
+        <div class="col-md-4">
+          <label for="ApellidoA2" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="ApellidoA2" required>
+        </div>
+        <div class="col-md-4">
+          <label for="MU2" class="form-label">N° Matricula Universitaria (MU)</label>
+          <input type="number" class="form-control" id="MU2" required>
+        </div>   
+      </div> 
+
+      <br><br>
+
+      <div id="Alumno3"> 
+        <h3>Ingrese datos del Alumno 3</h3>
+        <br>
+        <div class="col-md-4">
+          <label for="NombreA3" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="NombreA3" required>
+        </div>
+        <div class="col-md-4">
+          <label for="ApellidoA3" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="ApellidoA3" required>
+        </div>
+        <div class="col-md-4">
+          <label for="MU3" class="form-label">N° Matricula Universitaria (MU)</label>
+          <input type="number" class="form-control" id="MU3" required>
+        </div>   
+      </div> 
+
+      <br><br>
+
+      <div id="Director"> 
+        <h3>Ingrese datos del Director</h3>
+        <br>
+        <div class="col-md-4">
+          <label for="NombreD" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="NombreD" required>
+        </div>
+        <div class="col-md-4">
+          <label for="ApellidoD" class="form-label">Apellido</label>
+          <input type="text" class="form-control" id="ApellidoD" required>
+        </div>
+        <div class="col-md-4">
+          <label for="CUITD" class="form-label">N° de Cuit (sin puntos)</label>
+          <input type="number" class="form-control" id="CUITD" required>
+        </div>
+      </div> 
+
+      <br><br>
+
+      <div id="Co_Director"> 
+        <h3>Ingrese datos del Co-Director</h3>
+        <br>
+        <div class="col-md-4">
+          <label for="NombreCD" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="NombreCD" required>
+        </div>
+        <div class="col-md-4">
+            <label for="ApellidoCD" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="ApellidoCD" required>
+        </div>
+        <div class="col-md-4">
+            <label for="CUITCD" class="form-label">N° de Cuit (sin puntos)</label>
+            <input type="number" class="form-control" id="CUITCD" required>
+        </div>  
+      </div> 
+
+      <br><br>
+  
+      <div id="Asesor"> 
+          <h3>Ingrese datos del Asesor</h3>
+          <br>
+          <div class="col-md-4">
+            <label for="NombreAs" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="NombreAs">
+          </div>
+          <div class="col-md-4">
+            <label for="ApellidoAs" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="ApellidoAs">
+          </div>
+          <div class="col-md-4">
+            <label for="CUITAs" class="form-label">N° de Cuit (sin puntos)</label>
+            <input type="number" class="form-control" id="CUITAs">
+          </div>
+      </div> 
+
+      <div>
+        <button type="submit" class="btn btn-primary">Validar</button>
+      </div>
+    </form>
+    
+
+    <script src="./validacion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  </body>
+</html>
