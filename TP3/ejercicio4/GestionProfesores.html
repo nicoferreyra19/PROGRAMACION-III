@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Gestion Profesores</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
+    <body>
+
+        <nav class="navbar navbar bg fixed-top" id="barra">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" id="titulo_barra">SISTEMA DE REGISTRO: Tribunal Evaluador</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">SISTEMA DE REGISTRO: Tribunal Evaluador</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#" style="color: whitesmoke;">Inicio</a>
+                        </li>
+                      </ul>
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#" aria-expanded="false"
+                        style="color: whitesmoke;"> Perfil
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="./Login.html">Perfil 1</a></li>
+                          <li><a class="dropdown-item" href="#">Perfil 2</a></li>
+                          <li><a class="dropdown-item" href="#">Perfil 3</a></li>
+                        </ul>
+                      </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <br><br><br>
+
+        <h2>Gestión Profesor</h2>
+        <br><br>
+        <form id="form-container" action="#" method="" style="left:25px; display:grid;
+        position: relative;
+        justify-content: center;
+        align-items: center;">
+            <input id="Nombre" type="text" placeholder="Nombre" required>
+            <br>
+            <input id="Apellido" type="text" placeholder="Apellido" required>
+            <br>
+            <input id="Genero" type="text" placeholder="Genero" required>
+            <br>
+            <input id="Asignatura" type="text" placeholder="Asignatura" required>
+            <br>
+            <input id="Comision" type="text" placeholder="Comision" required>
+            <br>
+            <input type="submit" name="ENVIAR">
+        </form>
+        <br><br>
+        <table class="table-container table table-light" style="width: 80%; position: relative; left: 10%; right: 10%;">
+            <thead>
+                <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Genero</th> 
+                    <th scope="col">Asignatura</th> 
+                    <th scope="col">Comision</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="tibody">
+        
+            </tbody>
+            
+        </table>
+        
+        <script src="ObjetoProfesor.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    </body>
+</html>
