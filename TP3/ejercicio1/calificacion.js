@@ -23,3 +23,55 @@ switch (opcionSeleccionada) {
         break;
     }
 });
+
+let select2 = document.getElementById("calificacion2");
+let textarea2 = document.getElementById("floatingTextarea2");
+
+select2.addEventListener('change', function calificar2() {
+let opcionSeleccionada2 = select2.value;
+    
+    switch (opcionSeleccionada2) {
+        case "aprobado":
+            document.getElementById('Ej2').innerHTML = "CSFT-Aprobado";
+            textarea2.disabled = true;
+            break;
+        case "rechazado":
+            document.getElementById('Ej2').innerHTML = "CSFT-Rechazado";
+            textarea2.disabled = true;
+            break;
+        case "observado":
+            document.getElementById('Ej2').innerHTML = "CSFT-Observado";
+            textarea2.disabled = false;
+            break;
+        default:
+            document.getElementById('Ej2').innerHTML = "Pendiente";
+            textarea2.disabled = true;
+            break;
+        }
+});
+
+let select3 = document.getElementById("calificacion3");
+let textarea3 = document.getElementById("floatingTextarea3");
+
+select3.addEventListener('change', function calificar3() {
+let opcionSeleccionada3 = select3.value;
+    
+    switch (opcionSeleccionada3) {
+        case "aprobado":
+            document.getElementById('Ej3').innerHTML = "CSFT-Aprobado";
+            textarea3.disabled = true;
+            break;
+        case "rechazado":
+            document.getElementById('Ej3').innerHTML = "CSFT-Rechazado";
+            textarea3.disabled = true;
+            break;
+        case "observado":
+            document.getElementById('Ej3').innerHTML = "CSFT-Observado";
+            textarea3.disabled = false;
+            break;
+        default:
+            document.getElementById('Ej3').innerHTML = "Pendiente";
+            textarea3.disabled = true;
+            break;
+        }
+});
