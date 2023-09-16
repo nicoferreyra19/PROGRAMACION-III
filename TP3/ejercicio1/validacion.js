@@ -10,3 +10,4 @@ formulario1.addEventListener("submit", function(e){
       alert('Error. La fecha es posterior a la actual');
    }
 });
+ 
